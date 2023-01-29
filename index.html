@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <header>
-    <div class="w-full bg-white flex flex-row lg:justify-around">
-      <nav class="flex items-center h-20">
-        <div class="ml-3">
-          <img src="images/download.png" alt="Logo" class="mr-auto" />
-        </div>
-        <div class="w-full font-medium text-gray-400">
-          <a class="px-4">PAGE 1</a>
-          <a class="px-4">PAGE 2</a>
-          <a class="px-4">PAGE 3</a>
-          <a class="px-4">PAGE 4</a>
-          <a class="px-4">PAGE 5</a>
-          <a class="px-4">PAGE 6</a>
-          <a class="px-4">PAGE 7</a>
-          <a class="px-4">PAGE 8</a>
-          <a class="px-4">PAGE 9</a>
-          <a class="px-4">PAGE 10</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
   <body class="bg-neutral-900">
+    <header
+      class="w-full p-4 bg-white flex justify-between items-center"
+    >
+      <img src="images/download.png" class="mr-0" />
+      <nav class="hidden lg:flex lg:mx-auto lg:text-gray-400">
+        <a class="px-4">Page 1</a>
+        <a class="px-4">Page 2</a>
+        <a class="px-4">Page 3</a>
+        <a class="px-4">Page 4</a>
+        <a class="px-4">Page 5</a>
+        <a class="px-4">Page 6</a>
+        <a class="px-4">Page 7</a>
+        <a class="px-4">Page 8</a>
+        <a class="px-4">Page 9</a>
+        <a class="px-4">Page 10</a>
+      </nav>
+      <div class="lg:hidden">
+        <img src="images/menu.png" class="w-6 h-6 mx-4" />
+      </div>
+    </header>
     <div
-      class="lg:grid lg:gap-3 lg:place-content-center lg:m-14 lg:grid-flow-col-dense lg:grid-rows-2"
+      class="grid grid-rows-5 md:grid-rows-3 lg:grid-rows-2 grid-flow-col gap-2 place-content-center"
     >
       <section class="w-72 h-80">
         <img class="w-full h-full object-cover" src="images/download-1.jpg" />
       </section>
       <section class="sm:order-2 w-72 h-80">
-        <img class="w-full h-full object-cover object-left" src="images/download-2.jpg" />
+        <img
+          class="w-full h-full object-cover object-left"
+          src="images/download-2.jpg"
+        />
       </section>
       <section class="w-72 h-80 p-5 bg-orange-600 text-white flex flex-col">
         <span class="text-4xl mb-4">Blarg pop yolo</span>
